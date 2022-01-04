@@ -15,8 +15,14 @@ _start:
    mov      rax, 1024
    call     allocate
 
-   mov      rax, 1265
+   mov      rax, 9999
    call     int_to_str
+
+   mov      rax, rbx
+   call     print
+
+   mov      rax, str_end
+   call     print
 
    mov      rax, -1265
    call     int_to_str
